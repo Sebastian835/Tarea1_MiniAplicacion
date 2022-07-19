@@ -38,6 +38,7 @@ $(function() {
         },
         submitHandler: function(form) {
             form.submit();
+            alert("DATOS INGRESADOS CON EXITO")
         }
     });
 });
