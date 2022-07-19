@@ -1,5 +1,4 @@
 $(function() {
-
     $("form[name='validacion']").validate({
         rules: {
             nombre: {
@@ -10,11 +9,13 @@ $(function() {
             },
             edad: {
                 required: true,
-                min: 18
             },
             email: {
                 required: true,
                 email: true
+            },
+            mensaje: {
+                required: true,
             },
         },
         messages: {
@@ -29,7 +30,10 @@ $(function() {
                 min: "mayor de edad"
             },
             email: {
-                required: "Por favor, introduce una dirección de correo",
+                required: "Por favor, introduzca una dirección de correo",
+            },
+            mensaje: {
+                required: "Por favor, introduzca un mensaje",
             },
         },
         submitHandler: function(form) {

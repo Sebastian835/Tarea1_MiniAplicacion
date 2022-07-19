@@ -6,43 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/css/estilos.css">
     <title>Formulario</title>
 </head>
 
 <body>
-
-    <form id="validacion" name="validacion" action="#">
-        <h3>Datos</h3>
-        <br>
-        <input type="text" placeholder="Nombre" id="nombre" name="nombre" />
-        <br><br>
-        <input type="text" placeholder="Apellido" id="apellido" name="apellido" />
-        <br><br>
-        <input type="email" placeholder="Email" id="email" name="email" />
-        <br><br>
-        <input type="number" minlength="3" maxlength="3" placeholder="Edad" id="edad" name="edad" />
-        <br><br>
-        <textarea placeholder="Mensaje" name="mensaje" id="mensaje" rows="4" cols="98"></textarea>
-        <br><br>
-        <div id="recaptcha" cdata-sitekey="6LeloQMhAAAAAAYZ6tPZrmPPL7IiPO4tgf0skcCT"></div>
-        <br><br>
-
-
-        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-    </form>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-
+    <div class="container register">
+        <div class="row">
+            <div class="col-md-9 register-right">
+                <div class="tab-content" id="myTabContent">
+                    <form action="#" name="validacion">
+                        <h3 class="register-heading">Formulario</h3>
+                        <div class="row register-form">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Nombre" id="nombre" name="nombre" />
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Apellido" id="apellido" name="apellido" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email" id="email" name="email" />
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" minlength="1" maxlength="3" placeholder="Edad" id="edad" name="edad" />
+                                </div>
+                                <br>
+                            </div>
+                            <div>
+                                <textarea class="form-control" placeholder="Mensaje" id="mensaje" name="mensaje"></textarea>
+                                <br><br>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-
 
 </html>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script srcc="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
-<script srcc="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js%22%3E</script"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js%22%3E"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
 <script src="/static/js/script.js"></script>
